@@ -1,0 +1,41 @@
+{
+  "name": "genpark-proptech-leasing-multimodal-inquiry-scheduler-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - PropTech conversational leasing agent automating 24/7 tenant pre-qualification, smart-lock self-guided tour scheduling, and Yardi sync.",
+  "author": "genpark",
+  "category": "proptech",
+  "tags": [
+    "proptech",
+    "leasing-agent",
+    "tenant-scheduling",
+    "smart-lock-tours",
+    "elise-ai"
+  ],
+  "inputs": {
+    "prospective_tenant": {
+      "type": "string"
+    },
+    "inquiry_channel": {
+      "type": "string"
+    },
+    "preferred_apartment_unit": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "lease_inquiry_id": {
+      "type": "string"
+    },
+    "credit_income_prequalification_passed": {
+      "type": "boolean"
+    },
+    "self_guided_smart_lock_tour_booked_time": {
+      "type": "string"
+    },
+    "property_management_yardi_realpage_synced": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
